@@ -1,0 +1,110 @@
+.contact-form-section {
+  background-color: #fff;
+  padding-top: 6rem;
+  position: relative;
+
+  .background-overlay {
+    position: absolute;
+    background: center / cover;
+    top: 0;
+    z-index: 0;
+    left: 0;
+    width: 100%;
+    height: 44%;
+  }
+
+  h2 {
+    margin-bottom: 0;
+
+    svg {
+      width: 1.2em;
+      height: .8em;
+    }
+  }
+
+  .gform_wrapper {
+    margin-top: 0;
+  }
+
+  .contact-form-wrapper {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 3rem 1rem 0;
+    background: #f7f5f6;
+
+    @media (min-width: $screen-md) {
+      padding: 3rem 5rem 0;
+    }
+  }
+
+  .gfield, .gfield_error {
+    border-top: none !important;
+    border-bottom: none !important;
+    background-color: unset !important;
+    min-width: 50% !important;
+    position: relative;
+    display: inline-block;
+    padding: 0 8px !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+
+    @media (min-width: $screen-md) {
+      width: 50% !important;
+    }
+
+    input {
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      width: 100% !important;
+    }
+
+    textarea {
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      width: 100% !important;
+      min-height: 90px;
+      height: 90px !important;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    /**
+      Hotfix for textarea
+     */
+
+    &:nth-child(5),
+    &:last-child {
+      min-width: 50%;
+      width: 100% !important;
+    }
+  }
+
+  .gfield_label {
+    display: none !important;
+  }
+
+  .gform_button {
+    width: 100% !important;
+    max-width: 350px;
+    margin: 0 auto -28px !important;
+    display: block !important;
+  }
+
+  .validation_error {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+
+  .gfield_description.validation_message {
+    position: absolute;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    width: auto !important;
+    right: 15px;
+    top: 10px;
+  }
+}
